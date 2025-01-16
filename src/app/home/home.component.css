@@ -1,0 +1,44 @@
+section{
+    background-color: #1ABC9C;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+img{
+    width: 20%;
+}
+h1 {
+    font-size: 40;
+    font-weight: 700;
+    position: relative;
+}
+
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom:-30px ;
+    right: 10%;
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+}
+
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom:-30px ;
+    left: 10%;
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+}

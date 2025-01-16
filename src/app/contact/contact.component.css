@@ -1,0 +1,71 @@
+.form-control:focus {
+    box-shadow: none;
+
+}
+
+
+
+button {
+    position: relative;
+    left: 25%;
+    background-color: #1ABC9C;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 10px;
+}
+
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+}
+
+
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 15%;
+    width: 100px;
+    height: 4px;
+    background-color: #141313;
+}
+
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 15%;
+    width: 100px;
+    height: 4px;
+    background-color: #080707;
+}
+
+.top-15 {
+    top: -15px;
+}
+.top-10{
+    top:10px ;
+    z-index: -1;
+}
+
+label {
+    color: #1ABC9C;
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: -1;
+    transition: all .5s !important;
+    -webkit-transition: all .5s !important;
+    -moz-transition: all .5s !important;
+    -ms-transition: all .5s !important;
+    -o-transition: all .5s !important;
+}

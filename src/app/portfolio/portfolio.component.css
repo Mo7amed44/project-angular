@@ -1,0 +1,45 @@
+.item {
+    position: relative;
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background-color: rgba(26, 188, 156, 0.902);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+i {
+    font-size: 70px;
+    color: #fff;
+}
+
+
+.item:hover .icon {
+    opacity: 1;
+}
+
+.lightbox{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(3, 4, 63, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.Gallery {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,24 @@
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top py-4 ">
+    <div class="container d-flex justify-content-between  ">
+        <a class=" navbar-brand fs-2 fw-bold ms-5  text-white fw-bold"    (click)="chooseLink()" router-linkActive="" routerLink="home">START FRAMEWORK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-label="Toggle navigation" (click)="btnNavbar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div [class.show]="isOpen" class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav fs-5 justify-content-end flex-grow-1 pe-5">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 fw-bold  " (click)="chooseLink()"  routerLinkActive="bg-success rounded-3" routerLink="about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 fw-bold" (click)="chooseLink()" routerLinkActive="bg-success rounded-3" routerLink="portfolio">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 fw-bold" (click)="chooseLink()" routerLinkActive="bg-success rounded-3" routerLink="contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>

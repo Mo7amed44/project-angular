@@ -1,0 +1,80 @@
+<section class="position-relative" (click)="clear()" (click)="stopPropagation($event)">
+    <div class="container mt-5 pt-4">
+        <div class="row pt-5">
+
+            <div class="col-md-4 g-4" (click)="stopPropagation($event)">
+                <div class="inner">
+                    <div class="item" (click)="findImg('/poert1.png')">
+                        <img src="/poert1.png" class="w-100 rounded-4" alt="">
+                        <div class="icon d-flex justify-content-center align-items-center rounded-4">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 g-4" (click)="stopPropagation($event)">
+                <div class="inner">
+                    <div class="item" (click)="findImg('/port2.png')">
+                        <img src="/port2.png" class="w-100 rounded-4" alt="">
+                        <div class="icon d-flex justify-content-center align-items-center rounded-4">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 g-4" (click)="stopPropagation($event)">
+                <div class="inner">
+                    <div class="item" (click)="findImg('/port3.png')">
+                        <img src="/port3.png" class="w-100 rounded-4" alt="">
+                        <div class="icon d-flex justify-content-center align-items-center rounded-4">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 g-4" (click)="stopPropagation($event)">
+                <div class="inner">
+                    <div class="item" (click)="findImg('/poert1.png')">
+                        <img src="/poert1.png" class="w-100 rounded-4" alt="">
+                        <div class="icon d-flex justify-content-center align-items-center rounded-4">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 g-4" (click)="stopPropagation($event)">
+                <div class="inner">
+                    <div class="item" (click)="findImg('/port2.png')">
+                        <img src="/port2.png" class="w-100 rounded-4" alt="">
+                        <div class="icon d-flex justify-content-center align-items-center rounded-4">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 g-4" (click)="stopPropagation($event)">
+                <div class="inner">
+                    <div class="item" (click)="findImg('/port3.png')">
+                        <img src="/port3.png" class="w-100 rounded-4" alt="">
+                        <div class="icon d-flex justify-content-center align-items-center rounded-4">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @if(isLightboxOpen){
+    <div If="isLightboxOpen " class="lightbox" (click)="closeLightbox()">
+
+        <div class="Gallery">
+            <img [src]="img" alt="" class="w-100" />
+        </div>
+
+    </div>
+    }
+
+
+</section>

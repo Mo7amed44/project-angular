@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.home {
+    background-color: #1ABC9C;
+    color: #fff;
+}
+
+h1 {
+    font-size: 40;
+    font-weight: 700;
+}
+
+.p2 {
+    position: relative;
+}
+
+.p2::after {
+    content: "";
+    position: absolute;
+    top:-35px ;
+    left:0;
+    right: 0;
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+}
+.p1 {
+    position: relative;
+}
+
+.p1::after {
+    content: "";
+    position: absolute;
+    top:-35px ;
+    right: 20px;
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+}
