@@ -7,29 +7,35 @@
         </div>
         <div class="form ">
             <div class="position-relative">
-                <label for="userName" class="text-center" [class]="{'z-0':isName, 'top-15':isName ,'opacity-0':text.length==0,'top-10':text.length==0}">userName:</label>
-                <input type="text" (input)="watchLabelName()"  [(ngModel)]="text"  placeholder="userName" id="userName"
+                <label for="userName" class="text-center"
+                    [class]="{'z-0':isName, 'top-15':isName ,'opacity-0':text.length==0,'top-10':text.length==0}">userName:</label>
+                <input type="text" (input)="watchLabelName()" [(ngModel)]="text" placeholder="userName" id="userName"
                     class="form-control w-50 mx-auto mt-3 rounded-4 py-3 ps-2 my-3 border border-start-0 border-end-0 border-top-0">
             </div>
             <div class="position-relative">
-                <label for="userAge" [class]="{'z-0':isNumber, 'top-15':isNumber}">userAge:</label>
-                <input type="number"  (input)="watchLabelAge()" placeholder="userAge" id="userAge"
+                <label for="userAge"
+                    [class]="{'z-0':isNumber, 'top-15':isNumber,'opacity-0':!num,'top-10':!num}">userAge:</label>
+                <input type="number" (input)="watchLabelAge()" [(ngModel)]="num" placeholder="userAge" id="userAge"
                     class="form-control w-50  mx-auto mt-3 rounded-4 py-3  ps-2 my-3 border border-start-0 border-end-0 border-top-0">
             </div>
             <div class="position-relative">
-                <label for="userEmail" [class]="{'z-0':isEmail,'top-15':isName ,'opacity-0':data.length==0,'top-10':data.length==0}">userEmail:</label>
-                <input type="email" (input)="watchLabelEmail()" [(ngModel)]="data" placeholder="userEmail" id="userEmail"
+                <label for="userEmail"
+                    [class]="{'z-0':isEmail,'top-15':isName ,'opacity-0':data.length==0,'top-10':data.length==0}">userEmail:</label>
+                <input type="email" (input)="watchLabelEmail()" [(ngModel)]="data" placeholder="userEmail"
+                    id="userEmail"
                     class="form-control w-50 mx-auto mt-3 rounded-4 py-3 ps-2 my-3 border border-start-0 border-end-0 border-top-0">
             </div>
             <div class="position-relative">
-                <label for="userPassword" [class]="{'z-0':isPass, 'top-15':isPass,'opacity-0':pas.length==0,'top-10':pas.length==0}">userPassword:</label>
-                <input type="password" (input)="watchLabelPAss()" [(ngModel)]="pas" placeholder="userPassword" id="userPassword"
+                <label for="userPassword"
+                    [class]="{'z-0':isPass, 'top-15':isPass,'opacity-0':pas.length==0,'top-10':pas.length==0}">userPassword:</label>
+                <input type="password" (input)="watchLabelPAss()" [(ngModel)]="pas" placeholder="userPassword"
+                    id="userPassword"
                     class="form-control w-50 mx-auto mt-3 rounded-4 py-3 ps-2 my-3 border border-start-0 border-end-0 border-top-0">
             </div>
             <button class="p-2 mb-4 px-3">send Massage</button>
-            
+
         </div>
-        
+
     </div>
 
 </section>

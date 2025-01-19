@@ -11,13 +11,13 @@ export class ContactComponent {
   isNumber: boolean = false;
   isEmail: boolean = false;
   isPass: boolean = false;
-  
-  data:string ='';
-  text:string='';
-  num:string='';
-  pas:string='';
 
-  
+  data: string = '';
+  text: string = '';
+  num: string = '';
+  pas: string = '';
+
+
 
 
   watchLabelName(): void {
@@ -25,6 +25,8 @@ export class ContactComponent {
   }
   watchLabelAge(): void {
     this.isNumber = true
+    console.log(typeof this.num);
+
   }
   watchLabelEmail(): void {
     this.isEmail = true
